@@ -1,34 +1,37 @@
 import { useState } from 'react'
+import { Scrollama, Step } from 'react-scrollama';
+
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import ScrollamaDemo from './components/ScrollamaDemo';
+import MigratoryFish from './components/MigratoryFishPopChart';
+import TableauEmed from "./components/TableauEmbed";
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div style={{marginBottom:"500px"}}>
+
+      <div> 
+          There are plenty of fish in the sea...
+        </div>
+
+        {/* Species Unit chart */}
+        <div>
+        <img src="unitchart_blues2.png"></img>
+        </div>
+
+        <div> 
+        Or are there?
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
+
+    <MigratoryFish></MigratoryFish>    
+    <TableauEmed></TableauEmed>
+  </>
   )
 }
 
