@@ -2,7 +2,6 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
 }
 
 img.sticky {
@@ -24,4 +23,50 @@ img.sticky {
 .step-content {
   position: relative;
   z-index: 10; /* Ensure step content is above overlay */
+}
+
+
+.title {
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.subtitle{
+  color: #FFF;
+font-family: Poppins;
+font-size: 44px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.names{
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.textbox{
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.heading{
+  color: #FFF;
+font-family: Poppins;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
 }
