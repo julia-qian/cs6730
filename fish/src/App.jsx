@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import TableauEmbed from './components/TableauEmbed'
 import FlourishEmbed from './components/FlourishEmbed'
+import Sources from './Sources'
 
 
 function App() {
@@ -180,7 +181,7 @@ function App() {
       </div>
 
       <div style={{display:"flex", alignItems:"center", gap:"51px"}}>
-        <img src='salmongroup.png'
+        <img src='fish2.png'
         style={{width:"622px",
           // height: "819px",
           flexShrink:"0",
@@ -377,8 +378,9 @@ function App() {
           deeper into fish-related insights on our fish dashboard!
             </div>
             <div className='textbox' style={{textAlign:"center"}}>
-            This decline not only disrupts ecosystems but also poses significant economic challenges, as the decreasing 
-            fish population also increases the price of fish. correlation between fish 
+            Navigate through the data to discover global fishing trends and the story
+             beneath the waves. Use filters to select specific countries, years, or 
+             fishing practices, or interact directly with the map to dive deeper into the data that matters most to you.
             </div>
           </div>
 
@@ -412,6 +414,8 @@ function App() {
     }}>
           <img style={{width:"1510px"}} src='transition.png'></img>
     </div>
+
+    <Sources></Sources>
   </>
   )
 }

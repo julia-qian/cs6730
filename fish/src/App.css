@@ -63,6 +63,15 @@ line-height: normal;
   line-height: normal;
 }
 
+.citations{
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .heading{
   color: #FFF;
 font-family: Poppins;
