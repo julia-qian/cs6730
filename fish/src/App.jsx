@@ -99,7 +99,7 @@ function App() {
         differences— exploitation leads in Latin America, while habitat degradation dominates in 
         Europe.
         <br></br><br></br>
-        These regional challenges indicate that we need to take tailored in order to implement and
+        These regional challenges indicate that we need to take tailored action in order to implement and
          sustain impactful conservation efforts.
         </div>
       </div>
@@ -119,8 +119,7 @@ function App() {
         Plastic Tide: The Surge of Ocean Microplastics Since 1972
         </div>
         <div className='textbox' style={{width:"auto", marginBottom:"64px"}}>
-        Ocean microplastic concentrations pose a significant threat to fish populations, con
-        tributing to their decline. Check out the increasing trend of microplastic concentrations
+        Ocean microplastic concentrations pose a significant threat to fish populations, contributing to their decline. Check out the increasing trend of microplastic concentrations
          over time.
         </div>
     </div>
@@ -170,9 +169,9 @@ function App() {
           In 1970, fish biomass was relatively high in regions like South America and
            Japan, with varying fishing intensities. By 2011, biomass had dramatically 
            decreased across most regions, particularly in the U.S. (Northeast, Southeast,
-            and West Coasts), while fishing intensity rise, especially in Japan. <br></br><br/>
+            and West Coasts), while fishing intensity rises, especially in Japan. <br></br><br/>
 
-          This highlights the link between rising fishing pressure and fish population declines,
+          This highlights the link between rising fishing pressure and fish population decline,
            with unsustainable practices driving these trends, notably in U.S. waters.
           </div>
         </div>
@@ -291,10 +290,10 @@ function App() {
         <FlourishEmbed figureNo="20627211"></FlourishEmbed>
         <div style={{display:"flex", marginTop:"64px", marginBottom:"126px", gap:"40px"}}>
           <div className='textbox' style={{width:"614px", marginBottom:"20px"}}>
-          Where’s all the salmon coming from? If you look closely at this graph, you’ll notice the wild salmon populations are struggling, with numbers staying flat or even decreasing over the years. As we know the salmon consumption keeps swimming upward.
+          Where’s all the salmon coming from? From previous graphs, you’ll notice the wild salmon populations are struggling, with numbers staying flat or even decreasing over the years. As we know, the salmon consumption keeps swimming upward.
           </div>
           <div className='textbox' style={{width:"614px", marginBottom:"20px"}}>
-          The secret is farmed salmon! Since 2009, farmed salmon production has skyrocketed, surpassing 2,500 metric tons by 2022. While wild salmon keeps decreasing, farmed salmon is stepping in to keep our plates full. A tasty solution—but it comes with questions about sustainability.
+          The secret is farmed salmon! Since 2009, farmed salmon production has skyrocketed, surpassing 2,500 thousand tons by 2022. While wild salmon keeps decreasing, farmed salmon is stepping in to keep our plates full. A tasty solution—but it comes with questions about sustainability.
           </div>
         </div>
 
