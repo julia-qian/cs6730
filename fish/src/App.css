@@ -45,9 +45,10 @@ line-height: normal;
 }
 
 .names{
-  color: #FFF;
+  color: #626262;
+
   font-family: Poppins;
-  font-size: 21px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -78,6 +79,35 @@ text-align: center;
 font-family: Poppins;
 font-size: 32px;
 font-style: italic;
+font-weight: 700;
+line-height: normal;
+}
+
+.highlighted{
+  color: #78EAFF;
+font-family: Poppins;
+font-size: 24px;
+font-style: italic;
+font-weight: 700;
+line-height: normal;
+}
+
+.red_head{
+  color: #FF6A5D;
+
+font-family: Poppins;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.pink_head{
+  color: #FFABFB;
+
+font-family: Poppins;
+font-size: 32px;
+font-style: normal;
 font-weight: 700;
 line-height: normal;
 }

@@ -10,124 +10,172 @@ function App() {
   return (
     <>
     <div style={{padding:"125px"}}>
+
       <div style={{display:"flex", flexDirection:"column", justifyContent:"center"}}>
+        
         <div style={{
           display:"flex",
           flexDirection:"column",
           justifyContent:"left"
           }}>
+          <div className='names' style={{marginBottom:"46px"}}>
+          Jin Kim, Julia Qian, Jaeri Suh, Elaine Xu
+          </div>
           <div className='title'>
             Net Loss
           </div>
-          <div className='subtitle'>
+          <div className='subtitle' style={{marginBottom:"23px"}}>
             Unpacking the Decline of Fish Populations
           </div>
-          <div className='names'>
-          Jin Kim, Julia Qian, Jaeri Suh, Elaine Xu
+ 
+          <div className='textbox'>Discover the story behind the alarming decline in fish populations worldwide! 
+            Our data visualization dives into why fish populations are on decline, 
+            the impact of overfishing, and disruptions to our ecosystem. Most importantly, 
+            we’ll cover why you should care by sharing the far-reaching consequences for 
+            biodiversity, food security, and human health.</div>
+        </div>
+        
+        <div style={{marginTop:"140px"}}>
+          <div className="heading" style={{marginBottom:"24px"}}>
+          How many fish species are under the water? 
+          </div>
+          <div className='textbox' style={{width:"895px", marginBottom:"64px"}}>
+          <p>We often hear there are  
+          <span className="highlighted"> a lot of fish</span> in the sea. But are there more than 
+          amphibians or reptiles? Let’s take a closer look with this graph showing 
+          the biodiversity of vertebrate species.</p>
           </div>
         </div>
-        <div style={{height:"200px"}}></div>
         <div style={{display:"flex", justifyContent:"center"}}>
           <img src='unitchart.png' style={{width:"1366px"}}/>
         </div>
     </div>
-    <div style={{marginTop:"211px", marginBottom:"144px"}}>
-          <img style={{width:"100%"}} src='banner.png'></img>
-    </div>
-      <div className="heading">
-        index of abundance
+
+    <div style={{height:"858px"}}></div>
+
+      <div className="red_head">
+        Lost Fishes: <br></br>
+        A 81% Decline in Just 30 Years!
       </div>
-      <div className='textbox' style={{width:"614px", marginBottom:"64px"}}>
-      Fish populations have been in a steady and alarming decline over the decades.
-      The next graph highlights a dramatic decrease over the past 50 years in migratory.
+      <div className='textbox' style={{width:"635px", marginBottom:"64px"}}>
+      Despite the rich diversity of fish, the harsh reality is that the abundance 
+      of migratory freshwater fish has been sharply declining between 1970 to 2020. 
+      Asia-Oceania has seen a 28% reduction, while the Caribbean experienced a staggering 
+      91% decrease. 
       </div>
-      {/* dashboard */}
 
       {/* Index of Abundance */}
       <FlourishEmbed figureNo="20610313"></FlourishEmbed>
       <div style={{marginTop:"91px"}}>
-        <div className="heading">
-          Endangered
+        <div className="pink_head">
+        Why Are Freshwater Fish Vanishing?
         </div>
-        <div className='textbox' style={{width:"614px", marginBottom:"64px"}}>
-        Fish populations have been in a steady and alarming decline over the decades.
-        The next graph highlights a dramatic decrease over the past 50 years in migratory.
+        <div className='textbox' style={{width:"auto", marginBottom:"64px"}}>
+        There are a variety of factors leading to freshwater fish population decline. Globally, 
+        key threats include habitat destruction and pollution. However, there are stark regional 
+        differences— exploitation leads in Latin America, while habitat degradation dominates in 
+        Europe.
+        <br></br><br></br>
+        These regional challenges indicate that we need to take tailored in order to implement and
+         sustain impactful conservation efforts.
         </div>
       </div>
 
 
       {/* threats to endangered */}
-      <TableauEmbed figID=
-        "viz1733344698495"
-        figName="DistributionofThreatstoFreshwaterFish/Dashboard1"
-        figSrc="https://public.tableau.com/static/images/Di/DistributionofThreatstoFreshwaterFish/Dashboard1/1_rss.png"
-        figStatic="https://public.tableau.com/static/images/Di/DistributionofThreatstoFreshwaterFish/Dashboard1/1.png"></TableauEmbed>
+      <div style={{margin:"auto"}}>
+        <TableauEmbed figID=
+          "viz1733344698495"
+          figName="DistributionofThreatstoFreshwaterFish/Dashboard1"
+          figSrc="https://public.tableau.com/static/images/Di/DistributionofThreatstoFreshwaterFish/Dashboard1/1_rss.png"
+          figStatic="https://public.tableau.com/static/images/Di/DistributionofThreatstoFreshwaterFish/Dashboard1/1.png"></TableauEmbed>
+      </div>
+    
+    <div>
+      <div className="heading" style={{marginTop:"31px"}}>
+        Plastic Tide: The Surge of Ocean Microplastics Since 1972
+        </div>
+        <div className='textbox' style={{width:"auto", marginBottom:"64px"}}>
+        Ocean microplastic concentrations pose a significant threat to fish populations, con
+        tributing to their decline. Check out the increasing trend of microplastic concentrations
+         over time.
+        </div>
+    </div>
+
 
       {/* map */}
       <div style={{marginTop:"60px"}}>
         <FlourishEmbed figureNo="20624103"></FlourishEmbed>
       </div>
 
-      <div>
-        <div className='heading'>
-          before co2
-        </div>
-        <div style={{display:"flex"}}>
-        <div className='textbox' style={{width:"614px", marginBottom:"20px"}}>
-        Fish populations have been in a steady and alarming decline over the decades. 
-        The next graph highlights a dramatic decrease over the past 50 years in migratory 
-        </div>
-        <div className='textbox' style={{width:"614px", marginBottom:"20px"}}>
-        Fish populations have been in a steady and alarming decline over the decades. 
-        The next graph highlights a dramatic decrease over the past 50 years in migratory 
-        </div>
-        </div>
-
-      </div>
 
 
       {/* co2 */}
       <FlourishEmbed figureNo="20607752"></FlourishEmbed>
 
-        <div style={{display:"flex", marginBottom:"238px"}}>
+        <div style={{display:"flex", marginBottom:"89px", gap:"40px"}}>
           <div className='textbox' style={{width:"614px"}}>
-          Fish populations have been in a steady and alarming decline over the decades. 
-          The next graph highlights a dramatic decrease over the past 50 years in migratory 
+          At first glance, there may not appear to be a significant increase in 
+          ocean acidification levels. However, it’s important to note that these 
+          levels tend to fluctuate seasonally, and filtering by month 
+          shows how acidification levels are increasing over time.
           </div>
           <div className='textbox' style={{width:"614px"}}>
-          Fish populations have been in a steady and alarming decline over the decades. 
-          The next graph highlights a dramatic decrease over the past 50 years in migratory 
+          This increase disrupts ecosystems, affecting sea creatures with shells and predators
+           higher up the food chain that feed on them. It also harms fish and other marine life
+            sensitive to higher acidity. As fish populations are negatively impacted, we see
+             downstream effects like higher fish prices, more fishing, and more aquaculture.
           </div>
         </div>
 
+      
       {/* gapminder */}
       <FlourishEmbed figureNo="20626630"></FlourishEmbed>
 
-      <div style={{display:"flex", marginBottom:"173px"}}>
+      <div style={{display:"flex", marginBottom:"173px", gap:"40px"}}>
           <div className='textbox' style={{width:"614px", marginBottom:"20px"}}>
-          Fish populations have been in a steady and alarming decline over the decades. 
-          The next graph highlights a dramatic decrease over the past 50 years in migratory 
+          If we take a closer look at the changes in biomass and fishing intensity by region,
+           it becomes evident that the rate of fishing has increased. <br></br><br></br>
+
+          Between 1970 and 2011, the health of global fish populations significantly 
+          declined, with fishing rates increasing beyond sustainable levels in many regions. 
+          Fish stocks, measured by biomass, dropped below sustainable levels (value of 1), 
+          indicating overfishing. Fishing intensity, represented by bubble size, shows the 
+          proportion of fish populations caught annually. 
           </div>
           <div className='textbox' style={{width:"614px", marginBottom:"20px"}}>
-          Fish populations have been in a steady and alarming decline over the decades. 
-          The next graph highlights a dramatic decrease over the past 50 years in migratory 
+          In 1970, fish biomass was relatively high in regions like South America and
+           Japan, with varying fishing intensities. By 2011, biomass had dramatically 
+           decreased across most regions, particularly in the U.S. (Northeast, Southeast,
+            and West Coasts), while fishing intensity rise, especially in Japan. <br></br><br/>
+
+          This highlights the link between rising fishing pressure and fish population declines,
+           with unsustainable practices driving these trends, notably in U.S. waters.
           </div>
         </div>
 
-      <div className='special_heading'>
-        Let’s look at the specific case study, 
-        number 2 consumed fish in the United States. 
+      <div style={{height:"630px"}}>
       </div>
 
-      <div style={{marginTop:"375px"}}>
-        <div className="heading">
-          Endangered
-        </div>
-        <div className='textbox' style={{width:"614px"}}>
-        Fish populations have been in a steady and alarming decline over the decades.
-        The next graph highlights a dramatic decrease over the past 50 years in migratory.
-        <br/> <br/>
-        The next graph highlights a dramatic decrease over the past 50 years in migratory.
+      <div style={{display:"flex", alignItems:"center", gap:"51px"}}>
+        <img src='salmongroup.png'
+        style={{width:"622px",
+          // height: "819px",
+          flexShrink:"0",
+          borderRadius: "16px"}}/>
+        <div style={{height:"fit-content"}}>
+          <div className="heading">
+          Americans’ Favorite Fish
+          </div>
+          <div className='textbox' style={{width:"614px"}}>
+          Salmon has become the second most popular seafood choice in the U.S.,
+           following shrimp, showing notable growth.
+          <br></br><br></br>
+          In 2021, Americans consumed 3.38 pounds of salmon per capita, an 
+          increase of 0.55 pounds from the previous year. From 2012 to 2021, the global value
+           of salmon sales grew by 120%, while volume sales increased by 45%. With the rapid 
+           rise in salmon popularity, the population of wild salmon is also declining.
+          </div>
         </div>
       </div>
 
@@ -319,30 +367,13 @@ function App() {
           </div>
 
 
-    <div 
-          className='textbox'
-          style={{
-            zIndex:"100",
-            position:"absolute",
-            left:"100px",
-            top:"1800px",
-            width:"600px"
-            }}>
-            We often hear there are a lot of fish in the sea, and turns out,
-             it’s true! The biodiveristy of fish is greater than that of all 
-             other vertebrates! For example, there are almost 6x more fish species
-              than mammal species.
-    </div>
+
 
  <TableauEmbed figID=
-        "viz1733360496221"
-        figName="shared/W2C8XQPJ4"
-        figSrc="https://public.tableau.com/static/images/W2/W2C8XQPJ4/1_rss.png"
-        figStatic="https://public.tableau.com/static/images/W2/W2C8XQPJ4/1.png"></TableauEmbed>
-
-
-
-
+        "viz1733364921367"
+        figName="FishingData_17333593158860/Dashboard1"
+        figSrc="https://public.tableau.com/static/images/Fi/FishingData_17333593158860/Dashboard1/1_rss.png"
+        figStatic="https://public.tableau.com/static/images/Fi/FishingData_17333593158860/Dashboard1/1.png"></TableauEmbed>
 
   </div>
   <div style={{
@@ -373,13 +404,38 @@ function App() {
       <img src='sharks.png'style={{width:"866px"}}/>
     </div>
 
-    <div style={{
+    <div 
+      className='textbox'
+      style={{
+        zIndex:"100",
         position:"absolute",
-        top:"18000px",
-        zIndex:"-10",
-      }}>
-        <img src='1coral.png'style={{width:"1512px", height:"5053px"}}/>
-      </div>
+        left:"300px",
+        top:"2600px",
+        width:"600px"
+        }}>
+        Fish biodiversity surpasses that of all other vertebrates combined. 
+        In fact, there are nearly 6x more fish species than mammals, with an estimated 3.5
+          trillion fish swimming beneath the waves.
+    </div>
+
+
+    <div style={{
+      top:"4480px",
+      // left:"500px",
+      zIndex:"100",
+      position:"absolute"
+    }}>
+          <img style={{width:"1510px"}} src='banner.png'></img>
+    </div>
+
+    <div style={{
+      top:"11400px",
+      // left:"500px",
+      zIndex:"100",
+      position:"absolute"
+    }}>
+          <img style={{width:"1510px"}} src='transition.png'></img>
+    </div>
   </>
   )
 }
