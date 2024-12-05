@@ -70,6 +70,7 @@ font-size: 32px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+margin-bottom: 24px;
 }
 
 .special_heading{
@@ -81,6 +82,7 @@ font-size: 32px;
 font-style: italic;
 font-weight: 700;
 line-height: normal;
+margin-bottom: 24px;
 }
 
 .highlighted{
@@ -108,6 +110,15 @@ line-height: normal;
 font-family: Poppins;
 font-size: 32px;
 font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.fishfarm{
+  color: #639FFF;
+font-family: Poppins;
+font-size: 32px;
+font-style: italic;
 font-weight: 700;
 line-height: normal;
 }

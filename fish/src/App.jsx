@@ -48,10 +48,32 @@ function App() {
         </div>
         <div style={{display:"flex", justifyContent:"center"}}>
           <img src='unitchart.png' style={{width:"1366px"}}/>
+
         </div>
+        <div 
+            className='textbox'
+            style={{
+              zIndex:"-10",
+              position:"relative",
+              // left:"-1000px",
+              top:"-1800px",
+              width:"615px"
+              }}>
+              Fish biodiversity surpasses that of all other vertebrates combined. 
+              In fact, there are nearly 6x more fish species than mammals, with an estimated 3.5
+                trillion fish swimming beneath the waves.
+          </div>
+          
+      <div style={{
+        top:"-1500px",
+        zIndex:"100",
+        position:"relative"
+      }}>
+        <img src='sharks.png'style={{width:"866px"}}/>
+      </div>
     </div>
 
-    <div style={{height:"858px"}}></div>
+    <div style={{height:"138px"}}></div>
 
       <div className="red_head">
         Lost Fishes: <br></br>
@@ -180,35 +202,38 @@ function App() {
       </div>
 
       
-      <div style={{display:"flex", alignItems:"center", gap:"51px"}}>
-        <img src='CAmap.png'
-        style={{width:" 588px",
-          height: "819px",
-          flexShrink:"0",
-          borderRadius: "16px",
-          background: "url('CAmap.png') lightgray 50% / cover no-repeat"}}/>
+      <div style={{display:"flex", alignItems:"center", flexDirection:"column", marginTop:"187px", gap:"40px"}}>
+
         <div style={{height:"fit-content"}}>
           <div className="heading">
-            Endangered
+          California’s Salmon are in Trouble
           </div>
-          <div className='textbox' style={{width:"614px"}}>
-          Fish populations have been in a steady and alarming decline over the decades.
-          The next graph highlights a dramatic decrease over the past 50 years in migratory.
+          <div className='textbox' style={{width:"auto"}}>
+          California’s coho salmon, Chinook salmon, and steelhead are facing a tough battle.
+          The spawning range for California's salmon has decreased by 35% compared to their 
+          historical range. 
           <br/> <br/>
-          The next graph highlights a dramatic decrease over the past 50 years in migratory.
-          </div>
+          Consequently, these fish populations are declining significantly, with many of them 
+          now classified as endangered or threatened species.          </div>
         </div>
+        <img src='map.png'
+        style={{width:"1257.646px",
+          height: "819px",
+          }}/>
       </div>
 
       <div style={{marginTop:"160px", marginBottom:"64px"}}>
         <div className="heading">
-          Endangered
+        Declining Returns:<br/>
+        The Struggle to Sustain California's Salmon Populations
         </div>
-        <div className='textbox' style={{width:"614px"}}>
-        Fish populations have been in a steady and alarming decline over the decades.
-        The next graph highlights a dramatic decrease over the past 50 years in migratory.
+        <div className='textbox' style={{width:"auto"}}>
+        There has been a sharp decline in California’s salmon populations since the 1950s, 
+        particularly for Chinook salmon. Historically, an average of 500,000 salmon returned 
+        annually to spawn, but this number has steadily decreased over time. 
         <br/> <br/>
-        The next graph highlights a dramatic decrease over the past 50 years in migratory.
+        By 2020, salmon returns had dropped to below 200,000. Coho salmon and steelhead populations
+         are now critically low. Let’s explore the California Salmon population here!
         </div>
       </div>
 
@@ -220,9 +245,8 @@ function App() {
         figStatic='https://public.tableau.com/static/images/Da/DataViz_Cali/Dashboard1/1.png'></TableauEmbed>
 
     <div className='special_heading'
-    style={{marginTop:"160px", marginBottom:"111px"}}>
-        Despite of rapidly decreasing salmon population, 
-        our appetite never rests. 
+    style={{marginTop:"160px", marginBottom:"111px", color:"#FF927A"}}>
+        Despite the rapidly declining salmon population, our appetite for it continues to grow.
           </div>
     <div style={{marginBottom:"171px"}}>
       <img src="salmon_food.png" style={{width:"100%"}}></img>
@@ -230,46 +254,46 @@ function App() {
 
     {/* US Salmon Consumption Rate */}
     <FlourishEmbed figureNo="20609989"></FlourishEmbed>
-    <div style={{display:"flex", marginTop:"64px", marginBottom:"126px"}}>
+    <div style={{display:"flex", marginTop:"64px", marginBottom:"126px", gap:"40px"}}>
           <div className='textbox' style={{width:"614px", marginBottom:"20px"}}>
-          Fish populations have been in a steady and alarming decline over the decades. 
-          The next graph highlights a dramatic decrease over the past 50 years in migratory 
+          Americans are crazy about salmon, and it shows! Since 1990, U.S. salmon consumption has 
+          been steadily climbing, hitting over 20 pounds per person in 2021. That’s a lot of 
+          salmon dinners. What’s even more interesting? 
           </div>
           <div className='textbox' style={{width:"614px", marginBottom:"20px"}}>
-          Fish populations have been in a steady and alarming decline over the decades. 
-          The next graph highlights a dramatic decrease over the past 50 years in migratory 
+          Fresh and frozen salmon are clearly the crowd favorites, with their share growing 
+          consistently over the years, while canned salmon has been slowly going down. The shift
+           in taste highlights a growing appetite for fresher options on the dinner table. 
           </div>
         </div>
 
     {/* connected scatter */}
     <FlourishEmbed figureNo="20624220"></FlourishEmbed>
-    <div style={{display:"flex", marginTop:"64px", marginBottom:"126px"}}>
-          <div className='textbox' style={{width:"614px", marginBottom:"20px"}}>
-          Fish populations have been in a steady and alarming decline over the decades. 
-          The next graph highlights a dramatic decrease over the past 50 years in migratory 
-          </div>
-          <div className='textbox' style={{width:"614px", marginBottom:"20px"}}>
-          Fish populations have been in a steady and alarming decline over the decades. 
-          The next graph highlights a dramatic decrease over the past 50 years in migratory 
+    <div style={{display:"flex", marginTop:"64px", marginBottom:"126px", flexDirection:"column"}}>
+      <div className='heading'>
+      The Rising Cost of Salmon
+      </div>
+          <div className='textbox' style={{width:"auto", marginBottom:"20px"}}>
+          The increasing demand for salmon, coupled with its declining population, also
+           impacts our daily lives. From 2021 to 2023, salmon prices increased at a rate higher 
+           than the average expected inflation rate, making it more expensive for consumers to purchase.
           </div>
         </div>
     
         <div className='special_heading'
     style={{marginTop:"214px", marginBottom:"214px"}}>
-    The solution to address the increasing consumption demand is fish farming.
+    <p>The solution to address the increasing consumption demand <br/>is <span className='fishfarm'>fish farming.</span></p>
           </div>
 
 
         {/* dumbell */}
         <FlourishEmbed figureNo="20627211"></FlourishEmbed>
-        <div style={{display:"flex", marginTop:"64px", marginBottom:"126px"}}>
+        <div style={{display:"flex", marginTop:"64px", marginBottom:"126px", gap:"40px"}}>
           <div className='textbox' style={{width:"614px", marginBottom:"20px"}}>
-          Fish populations have been in a steady and alarming decline over the decades. 
-          The next graph highlights a dramatic decrease over the past 50 years in migratory 
+          Where’s all the salmon coming from? If you look closely at this graph, you’ll notice the wild salmon populations are struggling, with numbers staying flat or even decreasing over the years. As we know the salmon consumption keeps swimming upward.
           </div>
           <div className='textbox' style={{width:"614px", marginBottom:"20px"}}>
-          Fish populations have been in a steady and alarming decline over the decades. 
-          The next graph highlights a dramatic decrease over the past 50 years in migratory 
+          The secret is farmed salmon! Since 2009, farmed salmon production has skyrocketed, surpassing 2,500 metric tons by 2022. While wild salmon keeps decreasing, farmed salmon is stepping in to keep our plates full. A tasty solution—but it comes with questions about sustainability.
           </div>
         </div>
 
@@ -281,49 +305,32 @@ function App() {
           }}/>
         <div style={{height:"fit-content"}}>
           <div className="heading">
-            Endangered
+          The reality of Fish Farming
           </div>
           <div className='textbox' style={{width:"614px"}}>
-          Fish populations have been in a steady and alarming decline over the decades.
-          The next graph highlights a dramatic decrease over the past 50 years in migratory.
-          <br/> <br/>
-          The next graph highlights a dramatic decrease over the past 50 years in migratory.
+          Salmon farming involves raising salmon in controlled environments to meet global demand. While it provides a steady supply of fish, it raises concerns about environmental impacts, such as pollution, disease spread, and lower nutritional value compared to wild salmon.
           </div>
         </div>
       </div>
-
-
-        <div style={{display:"flex", marginBottom:"238px", marginTop:"40px"}}>
-          <div className='textbox' style={{width:"614px"}}>
-          Fish populations have been in a steady and alarming decline over the decades. 
-          The next graph highlights a dramatic decrease over the past 50 years in migratory 
-          </div>
-          <div className='textbox' style={{width:"614px"}}>
-          Fish populations have been in a steady and alarming decline over the decades. 
-          The next graph highlights a dramatic decrease over the past 50 years in migratory 
-          </div>
-        </div>
           
           <div>
             <div className='special_heading'>
-          But is farmed fish healthy to humans? 
+          But is farmed salmon healthy to humans? 
             </div>
             <div className='textbox' style={{textAlign:"center"}}>
-            This decline not only disrupts ecosystems but also poses significant economic
-             challenges, as the decreasing fish population also increases the price of fish.
-              correlation between fish 
+            Since over 80% of the fresh salmon consumed in the U.S. is farmed, we wanted to explore the impact of farmed fish on both human health and the environmental ecosystem.
             </div>
           </div>
 
-    <div style={{display:"flex", alignItems:"center", gap:"51px", marginTop:"122px"}}>
-        <div style={{height:"fit-content"}}>
+    <div style={{display:"flex", alignItems:"center", gap:"220px", marginTop:"122px"}}>
+    <div style={{height:"fit-content"}}>
             <div className="heading">
-            Higher  Calories by 10%, 
-            Less Vitamin B12 by 20%
+            Farmed vs. Wild Salmon: <br/>
+            A Nutritional Comparison
             </div>
             <div className='textbox' style={{width:"551px"}}>
-            Fish populations have been in a steady and alarming decline over the decades.
-            The next graph highlights a dramatic decrease over the past 50 years in migratory.
+            Farmed salmon, in a nutritional comparison, contains 13.19% more calories 
+            and fat than wild salmon, but about 8% less in vitamins. While this difference may not be critical, it highlights the reduced nutritional value of human-harvested fish compared to their wild counterparts.
             </div>
         </div>
         <img src='nutrition.png'
@@ -332,21 +339,30 @@ function App() {
           borderRadius: "16px",
           }}/>
 
+          <div style={{
+                top:"-30px",
+                left:"-950px",
+                zIndex:"100",
+                position:"relative"
+              }}>
+                <img src='Numbered.png'style={{width:"269px"}}/>
+              </div>
+
       </div>
 
 
 
       <div style={{marginTop:"143px", marginBottom:"90px"}}>
         <div className="heading">
-        Why farmed fish are dying?
+        Why are farmed fish are dying?
         </div>
         <div className='textbox' style={{width:"614px"}}>
-        Farmed fish are more susceptible to diseases, parasites, and environmental
-         stressors, leading to significant mortality rates. To address these challenges,
-          aquaculture often relies heavily on antibiotics in feed, which can accumulate in
-           fish tissues and affect human health when consumed. Additionally, the
-            overuse of antibiotics in fish farming contributes to antibiotic resistance, 
-            posing risks to both human health and marine ecosystems.
+        Farmed fish are more susceptible to diseases, parasites, and environmental 
+        stressors, leading to significant mortality rates. To address these challenges, 
+        aquaculture often relies heavily on antibiotics in feed, which can accumulate in
+         fish tissues and affect human health when consumed. Additionally, the overuse of 
+         antibiotics in fish farming contributes to antibiotic resistance, posing risks to 
+         both human health and marine ecosystems.
         </div>
       </div>
 
@@ -355,7 +371,7 @@ function App() {
       </div>
 
 
-      <div style={{marginTop:"374px"}}>
+      <div style={{marginTop:"260px", marginBottom:"54px"}}>
             <div className='special_heading'>
           Our story concludes here, but the journey continues! Dive 
           deeper into fish-related insights on our fish dashboard!
@@ -376,47 +392,7 @@ function App() {
         figStatic="https://public.tableau.com/static/images/Fi/FishingData_17333593158860/Dashboard1/1.png"></TableauEmbed>
 
   </div>
-  <div style={{
-      top:"8500px",
-      left:"100px",
-      position:"absolute"
-    }}>
-      <img src='salmon_all.png'style={{
-        scale:"30%",
-        transform: "scaleX(-1)"}}/>
-    </div>
 
-  <div style={{
-      top:"20000px",
-      left:"500px",
-      zIndex:"100",
-      position:"absolute"
-    }}>
-      <img src='Numbered.png'style={{width:"269px"}}/>
-    </div>
-
-    <div style={{
-        top:"2964px",
-        left:"135px",
-      zIndex:"100",
-      position:"absolute"
-    }}>
-      <img src='sharks.png'style={{width:"866px"}}/>
-    </div>
-
-    <div 
-      className='textbox'
-      style={{
-        zIndex:"100",
-        position:"absolute",
-        left:"300px",
-        top:"2600px",
-        width:"600px"
-        }}>
-        Fish biodiversity surpasses that of all other vertebrates combined. 
-        In fact, there are nearly 6x more fish species than mammals, with an estimated 3.5
-          trillion fish swimming beneath the waves.
-    </div>
 
 
     <div style={{
