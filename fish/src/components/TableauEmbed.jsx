@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-const TableauEmbed = () => {
+const TableauEmbed = ({figID, figName, figSrc, figStatic}) => {
   const vizContainerRef = useRef(null);
 
   useEffect(() => {
@@ -26,7 +26,7 @@ const TableauEmbed = () => {
   return (
     <div
       className="tableauPlaceholder"
-      id="viz1733344698495"
+      id={figID}
       style={{ position: 'relative' }}
       ref={vizContainerRef}
     >
@@ -34,7 +34,7 @@ const TableauEmbed = () => {
         <a href="#">
           <img
             alt="Dashboard 1"
-            src="https://public.tableau.com/static/images/Di/DistributionofThreatstoFreshwaterFish/Dashboard1/1_rss.png"
+            src={figSrc}
             style={{ border: 'none' }}
           />
         </a>
@@ -46,10 +46,10 @@ const TableauEmbed = () => {
         <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
         <param name="embed_code_version" value="3" />
         <param name="site_root" value="" />
-        <param name="name" value="DistributionofThreatstoFreshwaterFish/Dashboard1" />
+        <param name="name" value={figName} />
         <param name="tabs" value="no" />
         <param name="toolbar" value="yes" />
-        <param name="static_image" value="https://public.tableau.com/static/images/Di/DistributionofThreatstoFreshwaterFish/Dashboard1/1.png" />
+        <param name="static_image" value={figStatic} />
         <param name="animate_transition" value="yes" />
         <param name="display_static_image" value="yes" />
         <param name="display_spinner" value="yes" />

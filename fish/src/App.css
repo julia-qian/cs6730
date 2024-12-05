@@ -1,7 +1,7 @@
 #root {
-  max-width: 1280px;
+  max-width: 1512px;
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 
 img.sticky {
@@ -67,6 +67,17 @@ line-height: normal;
 font-family: Poppins;
 font-size: 32px;
 font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.special_heading{
+  color: #FFF;
+
+text-align: center;
+font-family: Poppins;
+font-size: 32px;
+font-style: italic;
 font-weight: 700;
 line-height: normal;
 }
